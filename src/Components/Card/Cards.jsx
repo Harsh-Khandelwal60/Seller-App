@@ -1,17 +1,29 @@
 import React from "react";
-import CardComponent from "./Card/Card";
-import { Grid } from "@mui/material";
+import useStyles from './Style'; 
+import { Grid , CircularProgress } from '@mui/material';
+import data from '../../Data/Data'
+import CardComponent from './Card/Card';
 
-const Cards = () => {
+
+const Posts = () => {
+    
+
+    const classes = useStyles();
+
+   
+   
     return (
-        <Grid container spacing={3}>
-        {/* {cardData.map((data) => (
-          <Grid item xs={4} key={data.id}>
-            <CardComponent title={data.title} description={data.description} />
-          </Grid>
-        ))} */}
-      </Grid>
+        <Grid sx={classes.container} container alignItems="stretch" spacing={3}>
+            {
+                data.map((data) => (
+                    <Grid key={data.id} item xs={12} sm={12} md={6} lg={4} >
+                        <CardComponent data={data} />
+                    </Grid>
+                ))
+            }
+        </Grid>
     )
-}
+       
+};
 
-export default Cards;
+export default Posts;

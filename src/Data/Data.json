@@ -1,0 +1,77 @@
+
+
+
+ [
+    { 
+      "id" : "1",
+      "name": "Toyota RAVA", 
+      "date" : "2021",
+      "img": "https://static.autox.com/uploads/cars/2021/08/bmw-2-series-gran-coupe.jpg",
+      "accomodation": "4",
+      "engine" : "Hybrid",
+      "Mylage" : "6.1",
+      "price" : "440"
+
+    },
+    { 
+      "id" : "2",
+      "name": "BMW 3 Series", 
+      "date" : "2019",
+      "img": "https://imgd.aeplcdn.com/642x336/cw/ec/37067/BMW-3-Series-Exterior-167583.jpg?wm=0&q=80",
+      "accomodation": "4",
+      "engine" : "Gasoline",
+      "type" : "Automatic",
+      "Mylage" : "8.2",
+      "price" : "350"
+
+    },
+    { 
+      "id" : "3",
+      "name": "Volkswagen T-Cross", 
+      "date" : "2020",
+      "img": "https://cdni.autocarindia.com/utils/imageresizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/BMW-2-Series-Gran-Coupe-271220221147.jpg",
+      "accomodation": "4",
+      "engine" : "Gasoline",
+      "type" : "Automatic",
+      "Mylage" : "5.3",
+      "price" : "400"
+
+    },
+    { 
+      "id" : "4",
+      "name": "Cadilliac", 
+      "date" : "2020",
+      "img": "https://cdni.autocarindia.com/ExtraImages/20230109024641_BMW%202.jpg",
+      "accomodation": "4",
+      "engine" : "Gasoline",
+      "type" : "Automatic",
+      "Mylage" : "7.7",
+      "price" : "620"
+
+    },
+    { 
+      "id" : "5",
+      "name": "BMW 4 Series GTI", 
+      "date" : "2021",
+      "img": "https://www.bmw.in/content/dam/bmw/marketIN/bmw_in/Topics/specialoffers/may-sales-push/2gc-desktop-new.jpg",
+      "accomodation": "4",
+      "engine" : "Gasoline",
+      "type" : "Automatic",
+      "Mylage" : "7.6",
+      "price" : "530"
+
+    },
+    { 
+        "id" : "6",
+      "name": "BMW 4 Series", 
+      "date" : "2019",
+      "img": "https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20201014012716_BMW-2-Series-Gran-Coupe-front-tracking-02.jpg&w=726&h=482&q=75&c=1",
+      "accomodation": "4",
+      "engine" : "Gasoline",
+      "type" : "Automatic",
+      "Mylage" : "7.2",
+      "price" : "490"
+
+    }
+    
+  ]
