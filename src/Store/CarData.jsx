@@ -24,7 +24,7 @@ const Slice = createSlice({
             return { ...state, data: slicedData };
         },
         searchData(state , action ) {
-            return { ...state , data : data1.filter((data) => data.name === action.payload)}
+            return { ...state , data : data1.filter(item => item.name.toLowerCase().includes(action.payload.toLowerCase()))}
         }
     }
 })

@@ -1,7 +1,7 @@
-import React ,{useState} from 'react';
+import React ,{useEffect, useState} from 'react';
 import { AppBar, Toolbar, Typography, InputBase, Button ,Link} from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
-import { searchData } from '../../Store/CarData';
+import { getData, searchData } from '../../Store/CarData';
 import {useStyles} from './Style'
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
@@ -12,12 +12,23 @@ const Navbar = () => {
   const classes = useStyles();
   const [search , setSearch] = useState('');
   const dispatch = useDispatch();
-  const navigate = useNavigate();
+  const Navigate = useNavigate();
+
+  useEffect(() => {
+    if(search){
+      dispatch(searchData(search));
+      Navigate('/pages')
+    }else{
+      dispatch(getData());
+    }
+  },[search])
 
   const handleClick = () => {
-    if(search)
+    if(search){
       dispatch(searchData(search));
-      navigate('/pages/1')
+      Navigate('/pages')
+    }
+     
   }
 
 
